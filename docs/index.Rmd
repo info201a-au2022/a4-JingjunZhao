@@ -1,45 +1,39 @@
 ---
-title: "Your A4 Report Title (TODO: Revise title)"
-author: "Your Name"
-date: '2022-11-01'
+title: "A4 Report "
+author: "Jingjun Zhao"
+date: '2022-11-23'
 output: html_document
 ---
 
 ```{r echo=FALSE, eval=TRUE, message=FALSE}
-source("../source/a4-helpers.R")
 source("../source/analysis.R")
+range(range_black$black_jail_pop)
+range(range_female$female_adult_jail_pop)
+range(range_male$male_adult_jail_pop)
+plot_jail_pop_for_us()
+plot_jail_pop_by_states(c("WA", "OR", "CA"))
+plot_female_jail_ratio()
+plot_female_jail_ratio_state()
 ```
 
 ## Abstract 
-[TODO: Include a short abstract (about 50 words)]
-
-# Test (TODO: Remove before submission!!)
-```{r echo=FALSE}
-q1_string <- test_query1()
-num <- 5
-```
-As you know, this is a markdown report. The [R Markdown Cheatsheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf) is **useful!**
-
-* Here's a test of a dynamic variable. Say **"`r q1_string`!!!** 
-* Here's another test. A vector
-of numbers: `r test_query2(num)`.
-
-Recall that _{r echo=TRUE}_ can be used to display the code, 
-which is very useful when developing and debugging a report. Here's an example: 
-
-```{r echo=TRUE}
-num <- 5
-sum <- sum(test_query2(num))
-print(sum)
-```
+In this project, we got to use the Incarceration Trends Dataset, which is a huge dataset including the population made up of the jail population in each region to compare many indicators to locate the inequality.
 
 ## Introduction 
-[TODO]
+We can easily use this Incarceration Trends Dataset to pull out insteresting indicators to make comparison with other indicators to define the any inequality. As the Vera Institue website mentioned, the reason they design and operate this dataset is to avoid mass incarceration, especially the unfair judgement for certain group of people. This data bring this inequality fact to everyone in the world to let more people especialy anyone with power to relize the inequality and to change the situation. Therefore, the direct stakeholders are the person who are facing inequal incarceration and anyone would need to use this data, and the indirect stakeholders could be everyone in the world because we all have access to this data and learn something from to initiate a change. In the following section, I tried to compare how each state or region have different jail population and female jail population comparing to all jail population. 
 
 ## Data Summary 
-[TODO]
+I chose three variables "black_jail_pop","female_adult_jail_pop","male_adult_jail_pop", which helps me to see the composition of jail population, which I can use to analyse the gender and race inequality in the job population. In this section, we did not take the population into account yet, but we can still see, as women made up for nearly half of the population, the number of female jail population is extremly smaller than male's, and more significantly, Los angeles county has the highest jail population for all my three indicators.
 
-[TODO ... other sections ... See Canvas for details]
+##Growth of the U.S. Prison Population
+From the cart, we can see a continuing and steady growth of the United States jail population, but the population kind of stoped increasing since 2008 and even began to decrease a little.
 
-_All the very best with your work!_
+##Growth of Prison Population by State 
+For this section, I ploted a chart for c("WA", "OR", "CA") these three states to make comparison with their in jail population. As a result, over years, california always has the highest jail poplation and exceed the rest two states by a lot. 
+
+## Female Jail Population Compare to Total Jail Population in Washington
+In this section, I compile a ratio to compare female jail population and total jail population, and I focused on the Washington state. From all the counties, we can see the ratio is normally inbetween 0.0 and 0.2; however, one county is obvivous high ratio, with a ratio around 0.4 and one year for 0.5. 
+
+## Mean Female Jail Population Compare to Total Jail Population
+In this section, I want to continue with the last section's finding but focus more on the United States' ration. For better allocation and fairness, I use the mean of jail population for both values over all the years, instead of using all the values all over the years.  From the chart, we can see that the eastern parts of the country generally have a darker color, which means they had lower ratio and tend to put less women in jail than the western part. 
 
