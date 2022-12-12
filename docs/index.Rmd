@@ -29,11 +29,13 @@ I chose three variables "black_jail_pop","female_adult_jail_pop","male_adult_jai
 From the cart, we can see a continuing and steady growth of the United States jail population, but the population kind of stoped increasing since 2008 and even began to decrease a little.
 
 ##Growth of Prison Population by State 
-For this section, I ploted a chart for c("WA", "OR", "CA") these three states to make comparison with their in jail population. As a result, over years, california always has the highest jail poplation and exceed the rest two states by a lot. 
+For this section, I plotted a chart for c("WA", "OR", "CA") these three states to make comparison with their in jail population. As a result, over years, California always has the highest jail population and exceed the rest two states by a lot. 
+As a question, I want to use this section to answer the question which state in the west-coast of the United States have the highest Jail population. 
 
 ## Female Jail Population Compare to Total Jail Population in Washington
-In this section, I compile a ratio to compare female jail population and total jail population, and I focused on the Washington state. From all the counties, we can see the ratio is normally inbetween 0.0 and 0.2; however, one county is obvivous high ratio, with a ratio around 0.4 and one year for 0.5. 
+In this section, I compile a ratio to compare female jail population and total jail population, and I focused on the Washington state. From all the counties, we can see the ratio is normally inbetween 0.0 and 0.2; however, one county is obvious high ratio, with a ratio around 0.4 and one year for 0.5. 
+In this part, the question I raised was what is the median ratio of female jail population to total jail population in Washington State.
 
 ## Mean Female Jail Population Compare to Total Jail Population
 In this section, I want to continue with the last section's finding but focus more on the United States' ration. For better allocation and fairness, I use the mean of jail population for both values over all the years, instead of using all the values all over the years.  From the chart, we can see that the eastern parts of the country generally have a darker color, which means they had lower ratio and tend to put less women in jail than the western part. 
-
+The question is which part of U.S tend to have higher ratio of female jail population to total jail population. 
